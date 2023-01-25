@@ -13,48 +13,48 @@
 # or otherwise) arising in any way out of the use of this software,
 # even if advised of the possibility of such damage.
 #
-#   File: potere.pri
+#   File: power.pri
 #
 # Author: $author$
-#   Date: 1/24/2023
+#   Date: 1/25/2023
 #
-# generic QtCreator project file for nunebulidity framework potere executable potere
+# generic QtCreator project file for nunebulidity framework potere executable power
 ########################################################################
 
 ########################################################################
-# potere
+# power
 
-# potere_exe TARGET
+# power TARGET
 #
-potere_exe_TARGET = potere
+power_TARGET = power
 
-# potere_exe INCLUDEPATH
+# power INCLUDEPATH
 #
-potere_exe_INCLUDEPATH += \
+power_INCLUDEPATH += \
 $${potere_INCLUDEPATH} \
 
-# potere_exe DEFINES
+# power DEFINES
 #
-potere_exe_DEFINES += \
+power_DEFINES += \
 $${potere_DEFINES} \
 DEFAULT_LOGGING_LEVELS_ERROR \
 XOS_CONSOLE_MAIN_MAIN \
 
 ########################################################################
-# potere_exe OBJECTIVE_HEADERS
+# power OBJECTIVE_HEADERS
 #
-#potere_exe_OBJECTIVE_HEADERS += \
-#$${POTERE_SRC}/xos/app/console/potere/main.hh \
+#power_OBJECTIVE_HEADERS += \
+#$${POTERE_SRC}/xos/app/console/power/main.hh \
 
-# potere_exe OBJECTIVE_SOURCES
+# power OBJECTIVE_SOURCES
 #
-#potere_exe_OBJECTIVE_SOURCES += \
-#$${POTERE_SRC}/xos/app/console/potere/main.mm \
+#power_OBJECTIVE_SOURCES += \
+#$${POTERE_SRC}/xos/app/console/power/main.mm \
 
 ########################################################################
-# potere_exe HEADERS
+# power HEADERS
 #
-potere_exe_HEADERS += \
+power_HEADERS += \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.h \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.hpp \
 \
@@ -75,18 +75,10 @@ $${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/main.hpp \
-\
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/base/main_opt.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/base/main.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.hpp \
-\
-$${POTERE_SRC}/xos/app/console/potere/main_opt.hpp \
-$${POTERE_SRC}/xos/app/console/potere/main.hpp \
 
-# potere_exe SOURCES
+# power SOURCES
 #
-potere_exe_SOURCES += \
+power_SOURCES += \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.cpp \
 \
 $${POTERE_SRC}/xos/pio/implement.cpp \
@@ -95,18 +87,18 @@ $${POTERE_SRC}/xos/pio/raspberrypi/raspberrypios/pigpio/pio.cpp \
 $${POTERE_SRC}/xos/pio/os/os.cpp \
 $${POTERE_SRC}/xos/pio/pios.cpp \
 \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.cpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.cpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main_opt.cpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main.cpp \
 
 ########################################################################
-# potere_exe FRAMEWORKS
+# power FRAMEWORKS
 #
-potere_exe_FRAMEWORKS += \
+power_FRAMEWORKS += \
 $${potere_FRAMEWORKS} \
 
-# potere_exe LIBS
+# power LIBS
 #
-potere_exe_LIBS += \
+power_LIBS += \
 $${potere_LIBS} \
 
 ########################################################################

@@ -13,48 +13,48 @@
 # or otherwise) arising in any way out of the use of this software,
 # even if advised of the possibility of such damage.
 #
-#   File: potere.pri
+#   File: potered.pri
 #
 # Author: $author$
-#   Date: 1/24/2023
+#   Date: 1/25/2023
 #
-# generic QtCreator project file for nunebulidity framework potere executable potere
+# generic QtCreator project file for nunebulidity framework potere executable potered
 ########################################################################
 
 ########################################################################
-# potere
+# potered
 
-# potere_exe TARGET
+# potered TARGET
 #
-potere_exe_TARGET = potere
+potered_TARGET = potered
 
-# potere_exe INCLUDEPATH
+# potered INCLUDEPATH
 #
-potere_exe_INCLUDEPATH += \
+potered_INCLUDEPATH += \
 $${potere_INCLUDEPATH} \
 
-# potere_exe DEFINES
+# potered DEFINES
 #
-potere_exe_DEFINES += \
+potered_DEFINES += \
 $${potere_DEFINES} \
 DEFAULT_LOGGING_LEVELS_ERROR \
 XOS_CONSOLE_MAIN_MAIN \
 
 ########################################################################
-# potere_exe OBJECTIVE_HEADERS
+# potered OBJECTIVE_HEADERS
 #
-#potere_exe_OBJECTIVE_HEADERS += \
-#$${POTERE_SRC}/xos/app/console/potere/main.hh \
+#potered_OBJECTIVE_HEADERS += \
+#$${POTERE_SRC}/xos/app/console/potered/main.hh \
 
-# potere_exe OBJECTIVE_SOURCES
+# potered OBJECTIVE_SOURCES
 #
-#potere_exe_OBJECTIVE_SOURCES += \
-#$${POTERE_SRC}/xos/app/console/potere/main.mm \
+#potered_OBJECTIVE_SOURCES += \
+#$${POTERE_SRC}/xos/app/console/potered/main.mm \
 
 ########################################################################
-# potere_exe HEADERS
+# potered HEADERS
 #
-potere_exe_HEADERS += \
+potered_HEADERS += \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.h \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.hpp \
 \
@@ -76,17 +76,18 @@ $${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/main.hpp \
 \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/base/main_opt.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/base/main.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.hpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.hpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/pio/main_opt.hpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/server/pio/main.hpp \
+\
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/server/pio/main_opt.hpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/server/pio/main.hpp \
 \
 $${POTERE_SRC}/xos/app/console/potere/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/potere/main.hpp \
 
-# potere_exe SOURCES
+# potered SOURCES
 #
-potere_exe_SOURCES += \
+potered_SOURCES += \
 $${POTERE_SRC}/xos/platform/os/raspberrypi/raspberrypios/pigpio.cpp \
 \
 $${POTERE_SRC}/xos/pio/implement.cpp \
@@ -95,18 +96,18 @@ $${POTERE_SRC}/xos/pio/raspberrypi/raspberrypios/pigpio/pio.cpp \
 $${POTERE_SRC}/xos/pio/os/os.cpp \
 $${POTERE_SRC}/xos/pio/pios.cpp \
 \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.cpp \
-$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.cpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/server/pio/main_opt.cpp \
+$${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/server/pio/main.cpp \
 
 ########################################################################
-# potere_exe FRAMEWORKS
+# potered FRAMEWORKS
 #
-potere_exe_FRAMEWORKS += \
+potered_FRAMEWORKS += \
 $${potere_FRAMEWORKS} \
 
-# potere_exe LIBS
+# potered LIBS
 #
-potere_exe_LIBS += \
+potered_LIBS += \
 $${potere_LIBS} \
 
 ########################################################################
