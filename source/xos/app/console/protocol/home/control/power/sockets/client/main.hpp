@@ -78,6 +78,103 @@ protected:
         return err;
     }
 
+    /// on...power_on_option...
+    virtual int on_set_power_on_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->power_on_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_power_on_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
+    /// on...power_off_option...
+    virtual int on_set_power_off_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->power_off_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_power_off_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
+
+    /// on...system_info_option...
+    virtual int on_set_system_info_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->system_info_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_system_info_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
+    /// on...system_restart_option...
+    virtual int on_set_system_restart_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->system_restart_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_system_restart_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
+    /// on...system_stop_option...
+    virtual int on_set_system_stop_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->system_stop_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_system_stop_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
+
 protected:
 }; /// class maint 
 typedef maint<> main;
