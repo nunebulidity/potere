@@ -13,48 +13,48 @@
 # or otherwise) arising in any way out of the use of this software,
 # even if advised of the possibility of such damage.
 #
-#   File: potere.pri
+#   File: rppower.pri
 #
 # Author: $author$
-#   Date: 1/24/2023
+#   Date: 2/3/2023
 #
-# generic QtCreator project file for nunebulidity framework potere executable potere
+# generic QtCreator project file for unebulidity framework potere executable rppower
 ########################################################################
 
 ########################################################################
-# potere
+# rppower
 
-# potere_exe TARGET
+# rppower TARGET
 #
-potere_exe_TARGET = potere
+rppower_TARGET = rppower
 
-# potere_exe INCLUDEPATH
+# rppower INCLUDEPATH
 #
-potere_exe_INCLUDEPATH += \
+rppower_INCLUDEPATH += \
 $${potere_INCLUDEPATH} \
 
-# potere_exe DEFINES
+# rppower DEFINES
 #
-potere_exe_DEFINES += \
+rppower_DEFINES += \
 $${potere_DEFINES} \
 DEFAULT_LOGGING_LEVELS_ERROR \
 XOS_CONSOLE_MAIN_MAIN \
 
 ########################################################################
-# potere_exe OBJECTIVE_HEADERS
+# rppower OBJECTIVE_HEADERS
 #
-#potere_exe_OBJECTIVE_HEADERS += \
-#$${POTERE_SRC}/xos/app/console/potere/main.hh \
+#rppower_OBJECTIVE_HEADERS += \
+#$${POTERE_SRC}/xos/app/console/rppower/main.hh \
 
-# potere_exe OBJECTIVE_SOURCES
+# rppower OBJECTIVE_SOURCES
 #
-#potere_exe_OBJECTIVE_SOURCES += \
-#$${POTERE_SRC}/xos/app/console/potere/main.mm \
+#rppower_OBJECTIVE_SOURCES += \
+#$${POTERE_SRC}/xos/app/console/rppower/main.mm \
 
 ########################################################################
-# potere_exe HEADERS
+# rppower HEADERS
 #
-potere_exe_HEADERS += \
+rppower_HEADERS += \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/base/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/base/main.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/client/main_opt.hpp \
@@ -67,21 +67,21 @@ $${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/base/main.hpp
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.hpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.hpp \
 
-# potere_exe SOURCES
+# rppower SOURCES
 #
-potere_exe_SOURCES += \
+rppower_SOURCES += \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main_opt.cpp \
 $${POTERE_SRC}/xos/app/console/protocol/home/control/power/sockets/client/main.cpp \
 
 ########################################################################
-# potere_exe FRAMEWORKS
+# rppower FRAMEWORKS
 #
-potere_exe_FRAMEWORKS += \
+rppower_FRAMEWORKS += \
 $${potere_FRAMEWORKS} \
 
-# potere_exe LIBS
+# rppower LIBS
 #
-potere_exe_LIBS += \
+rppower_LIBS += \
 $${potere_LIBS} \
 
 ########################################################################
