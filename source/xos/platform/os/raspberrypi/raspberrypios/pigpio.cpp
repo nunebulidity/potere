@@ -56,8 +56,8 @@ int gpioSetMode(unsigned gpio, unsigned mode) {
 }
 
 /// ...Read / ...Write
-int gpioRead (unsigned gpio) {
-    int err = 0;
+int gpioRead(unsigned gpio) {
+    int err = -1;
     LOGGER_LOG_INFO("(unsigned gpio = " << gpio << ")...");
     return err;
 }

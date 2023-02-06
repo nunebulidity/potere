@@ -73,6 +73,7 @@ public:
             LOGGER_IS_LOGGED_INFO("(err = gpioRead(" << of << "))...");
             if (0 > (err = gpioRead(of))) {
                 LOGGER_IS_LOGGED_ERROR("...failed on (" << err << " = gpioRead(" << of << "))");
+                value = ((int8_t)-1);
             } else {
                 LOGGER_IS_LOGGED_INFO("...(" << err << " = gpioRead(" << of << "))");
                 value = ((int8_t)err);

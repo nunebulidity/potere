@@ -116,6 +116,25 @@ protected:
         }
         return err;
     }
+    /// on...power_state_option...
+    virtual int on_set_power_state_option
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        const string_t &request = this->power_state_request();
+        this->set_request(request);
+        return err;
+    }
+    virtual int on_power_state_option_set
+    (const char_t* optarg, int optind, int argc, char_t**argv, char_t**env) {
+        int err = 0;
+        if (!(err = this->set_connect_run(argc, argv, env))) {
+            if (!(err = this->connect_run_set(argc, argv, env))) {
+            } else {
+            }
+        } else {
+        }
+        return err;
+    }
 
     /// on...system_info_option...
     virtual int on_set_system_info_option
